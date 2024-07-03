@@ -1,0 +1,43 @@
+
+:root {
+    --white: #fff;
+    --gray: #e4e4e4;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--gray);
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 40px 0;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: var(--white);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
