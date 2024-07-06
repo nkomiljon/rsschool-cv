@@ -3,25 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <title>CV</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main class="main">
+    <header class="header">
         <div class="container">
-            <div class="content">
-                <div class="wrapper">
-                    <h1>Komiljon Najmitdinov</h1>
-                    <p>
-                        Contacts:
-                        <span>
-                            <a href="https://t.me/knajmitdinov" target="_blank">Telegram</a>
-                        </span>
-                    </p>
-                    <p>Skils: <code>HTML, CSS, JavaScript, TypeScript, Git</code></p>
+            <div class="wrapper dark-content">
+                <div class="information">
+                    <div class="flex-1">
+                    </div>
+                    <div class="flex-1">
+                        <h1 class="name">Komiljon Najmitdinov</h1>
+                        <h2 class="title">Frontend Developer</h2>
+                    </div> 
                 </div>
             </div>
         </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="light-content wrapper">
+                <section class="bg-technologies content">
+                    <h2 class="skils">Skils</h2>
+                    <ul class="technologies">
+                        <li class="technology">
+                            <a href="#">
+                                <img src="https://skillicons.dev/icons?i=html" alt="html">
+                            </a>
+                            <span>
+                                <code>HTML</code>
+                            </span>
+                        </li>
+                        <li class="technology">
+                            <a href="#">
+                                <img src="https://skillicons.dev/icons?i=css" alt="css">
+                            </a>
+                            <span>
+                                <code>CSS</code>
+                            </span>
+                        </li>
+                        <li class="technology">
+                            <a href="#">
+                                <img src="https://skillicons.dev/icons?i=scss" alt="scss">
+                            </a>
+                            <span>
+                                <code>SCSS</code>
+                            </span>
+                        </li>
+                        <li class="technology">
+                            <a href="#">
+                                <img src="https://skillicons.dev/icons?i=js" alt="js">
+                            </a>
+                            <span>
+                                <code>JS</code>
+                            </span>
+                        </li>
+                        <li class="technology">
+                            <a href="#">
+                                <img src="https://skillicons.dev/icons?i=ts" alt="ts">
+                            </a>
+                            <span>
+                                <code>TS</code>
+                            </span>
+                        </li>
+                        <li class="technology">
+                            <a href="#">
+                                <img src="https://skillicons.dev/icons?i=git" alt="git">
+                            </a>
+                            <span>
+                                <code>Git</code>
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="bg-code content">
+                    <h2 class="skils">My code</h2>
+                    <code>
+                        function sayHello() { <br>
+                            &#12644;return '👋👋' <br>
+                        } <br>
+                        <br>
+                        sayHello();
+                    </code>
+                </section>
+            </div>
+        </div>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper light-content row">
+                <a 
+                    class="logo" 
+                    href="https://app.rs.school/">
+                    <img 
+                        class="rsschool-logo" 
+                        src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/cv/rs-school-logo.svg" 
+                        alt="rs-school">
+                </a>
+                <a 
+                    class="logo" 
+                    href="https://t.me/knajmitdinov">
+                    <img 
+                        src="https://cdn3.iconfinder.com/data/icons/social-icons-33/512/Telegram-64.png" 
+                        srcset="https://cdn3.iconfinder.com/data/icons/social-icons-33/512/Telegram-128.png 2x"
+                        alt="telegram">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
