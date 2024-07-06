@@ -1,0 +1,160 @@
+
+:root {
+    --white: #fff;
+    --gray: #e4e4e4;
+    --blue: #007bff;
+    --blue-light: #eff1ff;
+    --blue-500: #1b1a55;
+    --orange-light: #faeadc;
+
+    --font-roboto-slab: 'Roboto Slab', sans-serif;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    color: var(--blue);
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-roboto-slab);
+    background-color: var(--gray);
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 100%;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: var(--font-roboto-slab);
+    color: var(--white);
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: var(--font-roboto-slab);
+    color: var(--white);
+}
+
+
+.dark-content {
+    background-color: var(--blue-500)
+}
+
+.light-content {
+    background-color: var(--white);
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rsschool-logo {
+    width: 64px;
+    height: 64px;
+}
+
+.logo {
+    margin: 20px;
+}
+
+
+.bg-technologies {
+    background: linear-gradient(175deg, var(--white), var(--blue-light));
+}
+
+.bg-code {
+    background: linear-gradient(175deg, var(--white), var(--orange-light));
+}
+
+.skils {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: var(--font-roboto-slab);
+    color: var(--blue-500)
+}
+
+.technology {
+    width: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin: 0 20px;
+    border-radius: 6px;
+    background-color: var(--white);
+}
+
+
+@media (max-width: 768px) {
+    .information {
+        flex-direction: column;
+    }
+    
+    .technologies {
+        gap: 10px;
+    }
+}
