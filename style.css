@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --primary-color-hover: #2980b9;
+  --secondary-color-hover: #27ae60;
+  --body-bg-color: #f5f5f5;
+  --body-text-color: #000;
+  --font-main: "Arial", sans-serif;
+  --font-secondary: "Helvetica", sans-serif;
+  --font-body: 16px;
+  --line-height: 1.5;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-body);
+  line-height: var(--line-height);
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+header, 
+main,
+footer {
+  padding: 20px;
+}
+
+.name {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.skill {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
